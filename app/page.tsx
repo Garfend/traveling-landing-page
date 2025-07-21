@@ -43,7 +43,6 @@ export default function Home() {
                   <span className="text-amber-300 inline-block animate-fade-up stagger-2">Discover the World</span><br/>
                   <span className="inline-block animate-fade-up stagger-3">One Page at a Time.</span>
               </h1>
-              About the Book
               {/* Subheadline */}
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-up stagger-4 opacity-90">
                   A breathtaking travel memoir that guides your wanderlust with real stories, secrets, and soul.
@@ -53,16 +52,16 @@ export default function Home() {
               <div className="flex items-center justify-center space-x-1 mb-8 animate-zoom-in stagger-5">
                   {[1, 2, 3, 4, 5].map((star, index) => (
                       <Star key={star}
-                            className={`w-5 h-5 fill-amber-400 text-amber-400 animate-fade-up stagger-${index + 1}`}/>
+                            className={`w-5 h-5 fill-amber-400 text-amber-400 animate-star-reveal-pulse stagger-${index + 1}`}/>
                   ))}
                   <span className="ml-2 text-sm animate-fade-up stagger-6">As featured in Lonely Planet & Forbes</span>
               </div>
 
               {/* Floating Book Mockup */}
-              <div className="mb-12 animate-zoom-in stagger-6">
+              <div className="mb-12">
                   <div className="relative inline-block">
                       <div
-                          className="w-64 h-80 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-lg shadow-2xl animate-float-card hover:shadow-3xl transition-all duration-500 hover-lift">
+                          className="w-64 h-80 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-lg shadow-2xl animate-card-reveal animate-float-card-smooth hover:shadow-3xl transition-all duration-500 hover-lift">
                           <div className="p-6 h-full flex flex-col justify-between text-left">
                               <div>
                                   <h3 className="font-serif text-xl font-bold mb-2">Wanderlust Chronicles</h3>
@@ -156,9 +155,9 @@ export default function Home() {
                       <div className="animate-fade-left">
                           <div className="flex items-center mb-6">
                               <BookOpen className="w-8 h-8 text-blue-600 mr-3 animate-bounce"/>
-                              <h2 className="font-serif text-4xl font-bold text-white">About the Book</h2>
+                              <h2 className="font-serif text-4xl font-bold text-white animate-fade-up">About the Book</h2>
                           </div>
-                          <p className="text-lg text-amber-50 mb-8 leading-relaxed">
+                          <p className="text-lg text-amber-50 mb-8 leading-relaxed animate-fade-up stagger-1">
                               <span
                                   className="text-blue-600 font-semibold">This isn't just another travel guide.</span> It's
                               a collection of authentic stories, hidden gems,
